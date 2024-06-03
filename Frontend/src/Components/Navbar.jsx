@@ -109,7 +109,7 @@ function Navbar() {
             </div>
 
             <div>
-              <a className="btn bg-black text-white hover:bg-slate-800 duration-3000 transition-colors">
+              <a className="p-2 rounded-md bg-black text-white hover:bg-slate-800 duration-3000 transition-colors">
                 Login
               </a>
             </div>
