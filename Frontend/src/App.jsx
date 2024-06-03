@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "./Components/Navbar";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">This is your App</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
