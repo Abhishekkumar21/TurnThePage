@@ -19,8 +19,8 @@ function Navbar() {
   );
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 bg-slate-300">
-        <div className="navbar bg-slate-300">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 bg-base-100 fixed top-0 left-0 right-0">
+        <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -61,7 +61,7 @@ function Navbar() {
               <label className="px-3 py-1 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none bg-slate-300"
+                  className="grow outline-none"
                   placeholder="Search"
                 />
                 <svg
