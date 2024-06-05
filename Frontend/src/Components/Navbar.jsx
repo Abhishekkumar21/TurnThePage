@@ -1,6 +1,22 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+  //changing the background color of Navbar when scrolled
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const NavItems = (
     <>
       <li>
@@ -19,8 +35,15 @@ function Navbar() {
   );
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 bg-base-100 fixed top-0 left-0 right-0">
-        <div className="navbar bg-base-100">
+      <div
+        className={` max-w-screen-2xl container mx-auto md:px-20 px-4 bg-base-100 fixed top-0 left-0 right-0 
+      ${
+        isScrolled
+          ? "sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out"
+          : ""
+      }`}
+      >
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -61,7 +84,9 @@ function Navbar() {
               <label className="px-3 py-1 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none"
+                  className={`grow outline-none ${
+                    isScrolled ? "bg-base-200 duration-300" : ""
+                  }`}
                   placeholder="Search"
                 />
                 <svg
