@@ -19,8 +19,8 @@ function Navbar() {
   );
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 py-4">
-        <div className="navbar bg-base-100">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 bg-slate-300">
+        <div className="navbar bg-slate-300">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -61,7 +61,7 @@ function Navbar() {
               <label className="px-3 py-1 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none"
+                  className="grow outline-none bg-slate-300"
                   placeholder="Search"
                 />
                 <svg
@@ -109,7 +109,7 @@ function Navbar() {
             </div>
 
             <div>
-              <a className="p-2 rounded-md bg-black text-white hover:bg-slate-800 duration-3000 transition-colors">
+              <a className="px-2 py-1 md:px-4 rounded-md bg-black text-white hover:bg-slate-800 duration-3000 transition-colors cursor-pointer">
                 Login
               </a>
             </div>
