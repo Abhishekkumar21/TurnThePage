@@ -1,0 +1,84 @@
+[
+    {
+        "id":1,
+        "name": "Story Book",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 0,
+        "category": "Free",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":2,
+        "name": "Comic Book",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 0,
+        "category": "Free",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":3,
+        "name": "Indian Politics",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 20,
+        "category": "Politics",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":4,
+        "name": "Recipe Book",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 150,
+        "category": "Food",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":5,
+        "name": "Cricket Club",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 0,
+        "category": "Free",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":6,
+        "name": "A world of football",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 500,
+        "category": "Sport",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":7,
+        "name": "The laughing house",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 200,
+        "category": "Comedy",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":8,
+        "name": "Comedi-stan",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 0,
+        "category": "Free",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":9,
+        "name": "Time is yours",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 400,
+        "category": "Motivation",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    },
+    {
+        "id":10,
+        "name": "Think twice",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisi",
+        "price": 0,
+        "category": "Free",
+        "image" : "https://img.freepik.com/free-psd/social-media-post-mockup-with-literature-concept_23-2148082643.jpg?t=st=1717616720~exp=1717620320~hmac=9ccf9f0a8fd80dfec000a74d1d4348b884f7f2b05bd1d1f2fbe8430f4428e66e&w=740"
+    }
+
+
+]
