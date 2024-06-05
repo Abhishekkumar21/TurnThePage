@@ -5,7 +5,7 @@ function Banner() {
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-4 flex flex-col md:flex-row bg-base-100">
-        <div className="w-full md:w-1/2 mt-12 md:mt-32">
+        <div className="w-full md:w-1/2 mt-12 md:mt-32 order-2 md:order-1">
           <div className=" space-y-6 md:space-y-10">
             <h1 className=" text-2xl  md:text-5xl font-bold">
               Hello, welcome to{" "}
@@ -38,7 +38,7 @@ function Banner() {
           </div>
           <button className="btn btn-secondary mt-3">Secondary</button>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className=" order-1 w-full md:w-1/2">
           <img src={banner} className="w-90 h-90 flex-auto"></img>
         </div>
       </div>
