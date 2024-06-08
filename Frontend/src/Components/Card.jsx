@@ -4,8 +4,8 @@ function Card({ item }) {
   //console.log(item);
   return (
     <>
-      <div className="mt-4 my-3">
-        <div className="card w-96 bg-base-100 shadow-xl transition-transform transform hover:scale-105">
+      <div className="mt-4 my-3 p-3">
+        <div className="card w-92 bg-base-100 shadow-xl transition-transform transform hover:scale-105">
           <figure>
             <img src={item.image} alt="Shoes" />
           </figure>
@@ -16,8 +16,10 @@ function Card({ item }) {
             </h2>
             <p>{item.title}</p>
             <div className="card-actions justify-between">
-              <div className="badge badge-outline">${item.price}</div>
-              <div className="badge badge-outline hover:bg-pink-500 hover:text-white duration-200 py-2 px-1">
+              <div className="px-5 py-1 rounded-full  border-[2px]">
+                ${item.price}
+              </div>
+              <div className="cursor-pointer px-5 py-1 rounded-full  border-[2px] hover:bg-pink-500 hover:text-white duration-200">
                 Buy
               </div>
             </div>
