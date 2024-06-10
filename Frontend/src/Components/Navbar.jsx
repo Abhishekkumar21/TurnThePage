@@ -20,13 +20,13 @@ function Navbar() {
   const NavItems = (
     <>
       <li>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a href="/courses">Courses</a>
+        <a href="/course">Courses</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/contact">Contact</a>
       </li>
       <li>
         <a href="/about">About</a>
