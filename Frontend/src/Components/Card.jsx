@@ -4,17 +4,19 @@ function Card({ item }) {
   //console.log(item);
   return (
     <>
-      <div className="mt-4 my-3 p-3">
+      <div className="mt-4 my-3 p-2">
         <div className="card w-92 bg-base-100 shadow-xl transition-transform transform hover:scale-105">
           <figure>
-            <img src={item.image} alt="Shoes" />
+            <img src={item.image} alt="book" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">
+          <div className="card-body flex flex-col flex-grow p-2">
+            <h2 className="card-title text-sm">
               {item.name}
-              <div className="badge badge-secondary">{item.category}</div>
+              <div className="badge badge-secondary text-sm">
+                {item.category}
+              </div>
             </h2>
-            <p>{item.title}</p>
+            <p className="text-xs">{item.title}</p>
             <div className="card-actions justify-between">
               <div className="px-5 py-1 rounded-full  border-[2px]">
                 ${item.price}
