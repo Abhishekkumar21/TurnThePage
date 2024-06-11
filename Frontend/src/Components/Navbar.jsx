@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import useTheme from "../contexts/theme";
 
 function Navbar() {
   //changing the background color of Navbar when scrolled
@@ -16,6 +17,19 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  //grabbing theme value from the context for theme buttons
+  const { themeMode, lightTheme, darkTheme } = useTheme();
+  const onChangeBtn = (e) => {
+    const darkModeStatus = e.target.checked;
+    if (darkModeStatus) {
+      darkTheme();
+      console.log("Switched to dark theme");
+    } else {
+      lightTheme();
+      console.log("Switched to light theme");
+    }
+  };
 
   const NavItems = (
     <>
@@ -36,7 +50,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={` max-w-screen-2xl container mx-auto md:px-20 px-4 bg-base-100 fixed top-0 left-0 right-0 z-50
+        className={` max-w-screen-2xl container mx-auto md:px-20 px-4 bg-base-100 fixed top-0 left-0 right-0 z-50 dark:bg-slate-900 dark:text-white
       ${
         isScrolled
           ? "sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out"
@@ -84,7 +98,7 @@ function Navbar() {
               <label className="px-3 py-1 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className={`grow outline-none ${
+                  className={`grow outline-none  dark:bg-slate-900 dark:text-white ${
                     isScrolled ? "bg-base-200 duration-300" : ""
                   }`}
                   placeholder="Search"
@@ -111,6 +125,8 @@ function Navbar() {
                   type="checkbox"
                   className="theme-controller"
                   value="synthwave"
+                  onChange={onChangeBtn}
+                  checked={themeMode === "dark"}
                 />
 
                 {/* sun icon */}
@@ -134,7 +150,7 @@ function Navbar() {
             </div>
 
             <div>
-              <a className="px-2 py-1 md:px-4 rounded-md bg-black text-white hover:bg-slate-800 duration-3000 transition-colors cursor-pointer">
+              <a className="px-2 py-1 md:px-4 rounded-md bg-red-600 text-white hover:bg-red-600 duration-3000 transition-colors cursor-pointer">
                 Login
               </a>
             </div>
