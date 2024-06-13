@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import useTheme from "../contexts/theme";
+import Login from "./Login";
 
 function Navbar() {
   //changing the background color of Navbar when scrolled
@@ -150,9 +151,16 @@ function Navbar() {
             </div>
 
             <div>
-              <a className="px-2 py-1 md:px-4 rounded-md bg-red-600 text-white hover:bg-red-600 duration-3000 transition-colors cursor-pointer">
+              <a
+                className="px-2 py-1 md:px-4 rounded-md bg-red-600 text-white hover:bg-red-600 duration-3000 transition-colors cursor-pointer"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
                 Login
               </a>
+              <Login />
+              {/*Imported so that it should be opened on click of Login button*/}
             </div>
           </div>
         </div>
