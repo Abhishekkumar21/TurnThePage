@@ -44,6 +44,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./home/Home";
 import Course from "./Components/Course";
 import { ThemeProvider } from "./contexts/theme";
+import Signup from "./Components/Signup";
 
 function App() {
   // Retrieve theme mode from localStorage, default to 'light' if not set
@@ -74,6 +75,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
