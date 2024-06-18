@@ -4,8 +4,8 @@ function Card({ item }) {
   //console.log(item);
   return (
     <>
-      <div className="mt-4 my-3 p-2  dark:bg-slate-900 dark:text-white">
-        <div className="card w-92 bg-base-100 shadow-xl transition-transform transform hover:scale-105  dark:bg-slate-900 dark:text-white dark:border">
+      <div className="mt-4 my-3 p-2  dark:bg-slate-800 dark:text-white">
+        <div className="card w-92 bg-base-100 shadow-xl transition-transform transform hover:scale-105  dark:bg-slate-800 dark:text-white dark:border">
           <figure>
             <img src={item.image} alt="book" />
           </figure>
