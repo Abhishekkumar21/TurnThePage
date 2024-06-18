@@ -4,7 +4,7 @@ import banner from "../../public/Banner.png";
 function Banner() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-4 flex flex-col md:flex-row bg-base-10 dark:bg-slate-900 dark:text-white">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-4 flex flex-col md:flex-row bg-base-10 dark:bg-slate-800 dark:text-white">
         <div className="w-full md:w-1/2 mt-12 md:mt-32 order-2 md:order-1">
           <div className=" space-y-6 md:space-y-10">
             <h1 className=" text-2xl  md:text-5xl font-bold">
