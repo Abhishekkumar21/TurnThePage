@@ -6,19 +6,19 @@ function Login() {
     <div>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
       <dialog id="my_modal_3" className="modal">
-        <div className="modal-box dark:bg-slate-600 ">
+        <div className="modal-box dark:bg-slate-600 w-1/2">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
             </button>
           </form>
-          <h1 className="font-semibold text-2xl md:text-4xl justify-center flex dark:text-gray-200">
+          <h1 className="font-semibold text-2xl justify-center flex dark:text-gray-200">
             Log In
           </h1>
           <div className="pt-4s space-y-4">
             <div>
-              <label for="email" className="mb-2  dark:text-gray-400 text-lg">
+              <label for="email" className="mb-2  dark:text-gray-400">
                 Username
               </label>
               <input
@@ -29,8 +29,8 @@ function Login() {
                 required
               />
             </div>
-            <div>
-              <label for="password" className="mb-2 dark:text-gray-400 text-lg">
+            <div className="mb-4">
+              <label for="password" className="mb-2 dark:text-gray-400">
                 Password
               </label>
               <input
